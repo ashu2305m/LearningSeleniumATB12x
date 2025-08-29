@@ -3,6 +3,7 @@ package org.example.ex02_Selenium_Basics;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Link;
+import org.example.CommonToAll;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
