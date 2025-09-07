@@ -18,7 +18,7 @@ public class Lab42_RL_P1 {
 
         WebElement span_element = driver.findElement(By.xpath("//span[text()=\"Years of Experience\"]"));
 
-        driver.findElement(with(By.xpath("exp-2")).toRightOf(span_element)).click();
-
+        driver.findElement(with(By.id("exp-2")).toRightOf(span_element)).click();
+        // (with(By.id("exp-2")) -> with the help of this tag we can locate the element
     }
 }

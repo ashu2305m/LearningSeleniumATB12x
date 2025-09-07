@@ -21,10 +21,22 @@ public class Lab41_JS_Code_ShadowDOM {
 //        driver.findElement(By.id("pizza")).sendKeys("farmhouse");
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        WebElement inputboxPizza = (WebElement) js.executeScript("return document.querySelector(\"div#userName\").shadowRoot.querySelector('div#app2').shadowRoot.querySelector('#pizza');");
+        WebElement inputboxPizza = (WebElement) js.executeScript("return document.querySelector('div#userName').shadowRoot.querySelector('div#app2').shadowRoot.querySelector('#pizza');");
         inputboxPizza.sendKeys("farmhouse");
 
 
 
     }
 }
+
+/*   HTML STRUCTURE
+
+        <div id="userName">
+        #shadow-root (open)
+    <div id="app2">
+        #shadow-root (open)
+        <input id="pizza" type="text" placeholder="Enter pizza name">
+      </shadow-root>
+    </div>
+  </shadow-root>
+</div>                     */

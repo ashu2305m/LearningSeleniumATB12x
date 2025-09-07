@@ -31,3 +31,4 @@ public class Lab47_Selenium_Exceptions_Stale extends CommonToAll {
 
     }
 }
+

@@ -22,7 +22,7 @@ public class Lab43_RL_P2 {
         driver.findElement(By.xpath("//form[@id=\"form\"]/button")).click();
 
         WebElement username_element = driver.findElement(By.xpath("//input[@id='username']"));
-
+      // A text with tagname small is present and we are wanting to extract that tag.
         WebElement error_element = driver.findElement(with(By.tagName("small")).below(username_element));
 
         String errorText = error_element.getText();
